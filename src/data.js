@@ -27,7 +27,7 @@ const portfolioData = {
     {
         title: "Bot Whatsapp Multi Device",
         description: "A powerfull Bot Whatsapp",
-        image: "./src/assets/projects/project1.jpg",
+        image: "src/assets/projects/project1.jpg",
         tags: ["NodeJS", "HTML", "API"],
         demoLink: "https://wa.me/+79249129275",
         codeLink: "https://github.com/DanX1020/DANNN---Botz"
@@ -35,7 +35,7 @@ const portfolioData = {
     {
         title: "REST API",
         description: "REST API Powerfull have a lot features",
-        image: "./src/assets/projects/project2.jpg",
+        image: "src/assets/projects/project2.jpg",
         tags: ["JavaScript", "API", "CSS", "NODEJS", "EXPRESS"],
         demoLink: "https://dan-xapi.vercel.app",
         codeLink: "https://github.com/DanX1020/DanXAPI"
@@ -43,7 +43,7 @@ const portfolioData = {
     {
         title: "Web Portfolio",
         description: "Simple Portfolio Web",
-        image: "./src/assets/projects/project3.jpg",
+        image: "src/assets/projects/project3.jpg",
         tags: ["JavaScript", "HTML", "CSS"],
         demoLink: "https://danx-portfolio.vercel.app",
         codeLink: "https://github.com/DanX-007/simple-web-portfolio"
@@ -51,7 +51,7 @@ const portfolioData = {
     {
         title: "Weather Predictor",
         description: "Simple Weather Predictor",
-        image: "./src/assets/projects/project4.jpg",
+        image: "src/assets/projects/project4.jpg",
         tags: ["Python", "SVC"],
         demoLink: "https://github.com/DanX-007/weather-predicted",
         codeLink: "https://github.com/DanX-007/weather-predicted"
@@ -59,7 +59,7 @@ const portfolioData = {
     {
         title: "Obesity Predictor",
         description: "Simple Obesity Predictor",
-        image: "./src/assets/projects/project5.jpg",
+        image: "src/assets/projects/project5.jpg",
         tags: ["Python", "SVC"],
         demoLink: "https://github.com/DanX-007/Obesity-predictor",
         codeLink: "https://github.com/DanX-007/Obesity-predictor"
@@ -67,7 +67,7 @@ const portfolioData = {
     {
         title: "Stock Price Predictor",
         description: "Simple Stock-Price Predictor",
-        image: "./src/assets/projects/project6.jpg",
+        image: "src/assets/projects/project6.jpg",
         tags: ["Python", "SVC"],
         demoLink: "https://github.com/DanX-007/stock-price-predictor",
         codeLink: "https://github.com/DanX-007/stock-price-predictor"
