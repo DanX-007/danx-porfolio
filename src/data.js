@@ -27,7 +27,7 @@ const portfolioData = {
     {
         title: "Bot Whatsapp Multi Device",
         description: "A powerfull Bot Whatsapp",
-        image: "src/asset/project#1.jpg", // path gambar
+        image: "./src/asset/project#1.jpg", // path gambar
         tags: ["NodeJS", "HTML", "API"],
         demoLink: "https://wa.me/+7 924 912-92-75",
         codeLink: "https://github.com/DanX1020/DANNN---Botz"
@@ -35,7 +35,7 @@ const portfolioData = {
     {
         title: "REST API",
         description: "REST API Powerfull have a lot features",
-        image: "src/asset/project#2", // path gambar
+        image: "./src/asset/project#2", // path gambar
         tags: ["JavaScript", "API", "CSS", "NODEJS", "EXPRESS"],
         demoLink: "https://dan-xapi.vercel.app",
         codeLink: "https://github.com/DanX1020/DanXAPI"
@@ -43,7 +43,7 @@ const portfolioData = {
         {
         title: "Web Portfolio",
         description: "Simple Portfolio Web",
-        image: "src/asset/project#3", // path gambar
+        image: "./src/asset/project#3", // path gambar
         tags: ["JavaScript", "HTML", "CSS"],
         demoLink: "https://danx-portfolio.vercel.app",
         codeLink: "https://github.com/DanX-007/simple-web-portfolio"
@@ -51,7 +51,7 @@ const portfolioData = {
             {
         title: "Web Portfolio",
         description: "Simple Portfolio Web",
-        image: "src/asset/project#3", // path gambar
+        image: "./src/asset/project#3", // path gambar
         tags: ["JavaScript", "HTML", "CSS"],
         demoLink: "https://danx-portfolio.vercel.app",
         codeLink: "https://github.com/DanX-007/simple-web-portfolio"
@@ -59,7 +59,7 @@ const portfolioData = {
             {
         title: "Web Portfolio",
         description: "Simple Portfolio Web",
-        image: "src/asset/project#3", // path gambar
+        image: "./src/asset/project#3", // path gambar
         tags: ["JavaScript", "HTML", "CSS"],
         demoLink: "https://danx-portfolio.vercel.app",
         codeLink: "https://github.com/DanX-007/simple-web-portfolio"
@@ -67,7 +67,7 @@ const portfolioData = {
             {
         title: "Weather Predictor",
         description: "Simple Weather Predictor",
-        image: "src/asset/project#4", // path gambar
+        image: "./src/asset/project#4", // path gambar
         tags: ["Python" "SVC"],
         demoLink: "https://github.com/DanX-007/weather-predicted",
         codeLink: "https://github.com/DanX-007/weather-predicted"
@@ -75,7 +75,7 @@ const portfolioData = {
                 {
         title: "Weather Predictor",
         description: "Simple Weather Predictor",
-        image: "src/asset/project#4", // path gambar
+        image: "./src/asset/project#4", // path gambar
         tags: ["Python" "SVC"],
         demoLink: "https://github.com/DanX-007/weather-predicted",
         codeLink: "https://github.com/DanX-007/weather-predicted"
@@ -83,7 +83,7 @@ const portfolioData = {
                 {
         title: "Obesity Predictoe",
         description: "Simple Obesity Predictor",
-        image: "src/asset/project#5", // path gambar
+        image: ".0src/asset/project#5", // path gambar
         tags: ["Python" "SVC"],
         demoLink: "https://github.com/DanX-007/Obesity-predictor",
         codeLink: "https://github.com/DanX-007/Obesity-predictor"
@@ -91,7 +91,7 @@ const portfolioData = {
                 {
         title: "Stock Price Predictor",
         description: "Simple Stock-Price Predictor",
-        image: "src/asset/project#6", // path gambar
+        image: "./src/asset/project#6", // path gambar
         tags: ["Python" "SVC"],
         demoLink: "https://github.com/DanX-007/stock-price-predictor",
         codeLink: "https://github.com/DanX-007/stock-price-predictor"
