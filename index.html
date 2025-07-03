@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DanX | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -23,6 +23,14 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="theme-toggle">
+                    <input type="checkbox" id="theme-switch" class="theme-switch" />
+                    <label for="theme-switch" class="theme-label">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                        <div class="theme-ball"></div>
+                    </label>
+                </div>
                 <div class="menu-toggle">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -34,14 +42,23 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 id="hero-name">Nama Lengkap</h1>
-                <p id="hero-title">Profesi Utama</p>
+                <h1 id="hero-name" class="text-gradient">Nama Lengkap</h1>
+                <p id="hero-title" class="typewriter">Profesi Utama</p>
                 <p id="hero-desc">Deskripsi singkat tentang diri Anda dan apa yang Anda lakukan</p>
-                <a href="#projects" class="btn">Lihat Projek Saya</a>
-          
-              </div>
-            
+                <a href="#projects" class="btn floating-btn">Lihat Projek Saya</a>
+                <div class="hero-scroll">
+                    <div class="scroll-down"></div>
+                </div>
             </div>
+            <div class="hero-image">
+                <div class="hero-shape hero-shape-1"></div>
+                <div class="hero-shape hero-shape-2"></div>
+                <div class="hero-shape hero-shape-3"></div>
+                <div class="hero-avatar">
+                    <img src="src/asset/main.jpg" alt="Nama Anda">
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
@@ -50,20 +67,23 @@
             <h2 class="section-title">Tentang Saya</h2>
             <div class="about-content">
                 <div class="about-image">
-    <img src="src/asset/about.jpg" alt="Nama Anda" class="profile-image">
-</div>
+                    <div class="about-frame">
+                        <img src="src/asset/about.jpg" alt="Nama Anda" class="profile-image">
+                        <div class="about-frame-decoration"></div>
+                    </div>
+                </div>
                 <div class="about-text">
                     <p id="about-desc">Deskripsi lengkap tentang diri Anda, latar belakang pendidikan, pengalaman kerja, dan minat profesional.</p>
                     <div class="about-details">
-                        <div>
+                        <div class="detail-card">
                             <i class="fas fa-user-graduate"></i>
                             <span id="education">Pendidikan Terakhir</span>
                         </div>
-                        <div>
+                        <div class="detail-card">
                             <i class="fas fa-briefcase"></i>
                             <span id="experience">Pengalaman Kerja</span>
                         </div>
-                        <div>
+                        <div class="detail-card">
                             <i class="fas fa-map-marker-alt"></i>
                             <span id="location">Lokasi</span>
                         </div>
@@ -88,8 +108,8 @@
         <div class="container">
             <h2 class="section-title">Projek Terbaru</h2>
             <div class="projects-grid" id="projects-grid">
-    <!-- Projects akan diisi dari data.js -->
-</div>
+                <!-- Projects akan diisi dari data.js -->
+            </div>
         </div>
     </section>
 
@@ -121,7 +141,7 @@
                         <div class="form-group">
                             <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Kirim Pesan</button>
+                        <button type="submit" class="btn floating-btn">Kirim Pesan</button>
                     </form>
                 </div>
             </div>
@@ -138,4 +158,4 @@
     <script src="src/data.js"></script>
     <script src="script.js"></script>
 </body>
-                  </html>
+</html>

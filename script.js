@@ -1,7 +1,29 @@
-// script.js
 document.addEventListener('DOMContentLoaded', function() {
     // Set current year in footer
     document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Theme toggle functionality
+    const themeSwitch = document.getElementById('theme-switch');
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const htmlElement = document.documentElement;
+    
+    // Check for saved theme or prefered scheme
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark' || (!currentTheme && prefersDarkScheme.matches)) {
+        htmlElement.setAttribute('data-theme', 'dark');
+        themeSwitch.checked = true;
+    }
+    
+    // Theme switcher
+    themeSwitch.addEventListener('change', function() {
+        if (this.checked) {
+            htmlElement.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            htmlElement.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    });
     
     // Populate personal information
     const personalInfo = portfolioData.personalInfo;
@@ -31,34 +53,33 @@ document.addEventListener('DOMContentLoaded', function() {
         skillsContainer.appendChild(skillCard);
     });
     
-    // Populate projects// Populate projects
-const projectsGrid = document.getElementById('projects-grid');
-portfolioData.projects.forEach(project => {
-    const projectCard = document.createElement('div');
-    projectCard.className = 'project-card';
-    projectCard.innerHTML = `
-        <div class="project-image">
-            <img src="${project.image}" alt="${project.title}">
-        </div>
-        <div class="project-content">
-            <h3 class="project-title">${project.title}</h3>
-            <p class="project-desc">${project.description}</p>
-            <div class="project-tags">
-                ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+    // Populate projects
+    const projectsGrid = document.getElementById('projects-grid');
+    portfolioData.projects.forEach(project => {
+        const projectCard = document.createElement('div');
+        projectCard.className = 'project-card';
+        projectCard.innerHTML = `
+            <div class="project-image">
+                <img src="${project.image}" alt="${project.title}">
             </div>
-            <div class="project-links">
-                <a href="${project.demoLink}" class="project-link" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> Demo
-                </a>
-                <a href="${project.codeLink}" class="project-link" target="_blank">
-                    <i class="fab fa-github"></i> Code
-                </a>
+            <div class="project-content">
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-desc">${project.description}</p>
+                <div class="project-tags">
+                    ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+                </div>
+                <div class="project-links">
+                    <a href="${project.demoLink}" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> Demo
+                    </a>
+                    <a href="${project.codeLink}" class="project-link" target="_blank">
+                        <i class="fab fa-github"></i> Code
+                    </a>
+                </div>
             </div>
-        </div>
-    `;
-    projectsGrid.appendChild(projectCard);
-});
-    
+        `;
+        projectsGrid.appendChild(projectCard);
+    });
     
     // Populate contact info
     const contactInfoList = document.getElementById('contact-info-list');
@@ -85,17 +106,17 @@ portfolioData.projects.forEach(project => {
         const message = document.getElementById('message').value;
         
         if (!name || !email || !message) {
-            alert('Harap isi semua kolom!');
+            showAlert('Harap isi semua kolom!', 'error');
             return;
         }
         
         if (!validateEmail(email)) {
-            alert('Email tidak valid!');
+            showAlert('Email tidak valid!', 'error');
             return;
         }
         
         // Form submission logic would go here
-        alert(`Terima kasih, ${name}! Pesan Anda telah terkirim.`);
+        showAlert(`Terima kasih, ${name}! Pesan Anda telah terkirim.`, 'success');
         contactForm.reset();
     });
     
@@ -147,5 +168,17 @@ portfolioData.projects.forEach(project => {
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(email);
+    }
+    
+    // Show alert function
+    function showAlert(message, type) {
+        // Remove any existing alerts
+        const existingAlert = document.querySelector('.custom-alert');
+        if (existingAlert) existingAlert.remove();
+        
+        const alert = document.createElement('div');
+        alert.className = `custom-alert ${type}`;
+        alert.textContent = message;
+        document.body.appendChild(alert);
     }
 });
