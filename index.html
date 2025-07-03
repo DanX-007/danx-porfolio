@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanX | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <span>DanX</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 id="hero-name">Nama Lengkap</h1>
+                <p id="hero-title">Profesi Utama</p>
+                <p id="hero-desc">Deskripsi singkat tentang diri Anda dan apa yang Anda lakukan</p>
+                <a href="#projects" class="btn">Lihat Projek Saya</a>
+          
+              </div>
+            
+            </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Saya</h2>
+            <div class="about-content">
+                <div class="about-image">
+    <img src="src/asset/about.jpg" alt="Nama Anda" class="profile-image">
+</div>
+                <div class="about-text">
+                    <p id="about-desc">Deskripsi lengkap tentang diri Anda, latar belakang pendidikan, pengalaman kerja, dan minat profesional.</p>
+                    <div class="about-details">
+                        <div>
+                            <i class="fas fa-user-graduate"></i>
+                            <span id="education">Pendidikan Terakhir</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-briefcase"></i>
+                            <span id="experience">Pengalaman Kerja</span>
+                        </div>
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span id="location">Lokasi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-container" id="skills-container">
+                <!-- Skills will be populated from data.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projek Terbaru</h2>
+            <div class="projects-grid" id="projects-grid">
+    <!-- Projects akan diisi dari data.js -->
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <ul id="contact-info-list">
+                        <!-- Contact info will be populated from data.js -->
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" id="social-linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" id="social-github"><i class="fab fa-github"></i></a>
+                        <a href="#" id="social-twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" id="social-instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Pesan Anda" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> <span id="footer-name">Nama Anda</span>. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="src/data.js"></script>
+    <script src="script.js"></script>
+</body>
+                  </html>
